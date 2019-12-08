@@ -2,62 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49fb25b1-11af-499a-8ed2-4b071d4917bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/comments.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/favorite.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/users.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/author/comments.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/author/favorite.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/author/settings.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/search.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/tag.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SubscriberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SubscriberController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Author/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Author/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Author/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Author/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubscriberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubscriberController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/RolesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RolesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/abcd-2019-12-01-5de3b397c9935.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/frontend/images/category-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/frontend/images/category-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/frontend/images/slider-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap-2019-11-29-5de1131bee888.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/checkqueue2-2019-11-28-5ddfc14f00e7f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fgfhfd-2019-12-01-5de3b7a32ef96.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/ghdfghj-2019-12-01-5de3b76491d47.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/howtousebootstrap-2019-11-28-5ddfbe9446b18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascript-2019-11-28-5ddfc0e4a4796.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascript-2019-11-29-5de1133ed1ae0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascriptlearning-2019-11-28-5ddfbdced7fe8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascriptlearning-2019-11-28-5ddfc0c0664d1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/laravel-2019-11-28-5ddfb5d99998d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/learnhowtouselaravel-2019-11-28-5ddfb5ffde2f6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/learnhowtousespring-2019-11-28-5ddfb6c571cdb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/learnhowtousevuejsframework-2019-11-28-5ddfbfe380b30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/md. admin-2019-11-29-5de13ccb16ff3.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/md. admin-2019-11-29-5de13f090da80.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/newadminpost-2019-11-28-5ddfb93f7442c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/newadminpost-2019-11-28-5ddfc0563f535.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/newadminpost-2019-11-29-5de114fda00b7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/spring-2019-11-28-5ddfc0a6644e2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/xyz-2019-12-01-5de3b2fbb8382.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/settings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/settings.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/author/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/author/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/backend/partial/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/backend/partial/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontend/partial/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/frontend/partial/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontend/partial/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/frontend/partial/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Author/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Author/CommentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/comments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/comments.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/post/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/author/comments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/author/comments.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +193,7 @@
       <workItem from="1575691877763" duration="9213000" />
       <workItem from="1575703499373" duration="5853000" />
       <workItem from="1575719760045" duration="40048000" />
-      <workItem from="1575770332796" duration="301000" />
+      <workItem from="1575770332796" duration="5703000" />
     </task>
     <servers />
   </component>

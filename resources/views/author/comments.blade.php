@@ -16,7 +16,7 @@
                     <div class="header">
                         <h2>
                             ALL COMMENTS
-                            <span class="badge bg-blue">{{$comments->comments->count()}}</span>
+                            <span class="badge bg-blue">{{$comments->count()}}</span>
                         </h2>
                     </div>
                     <div class="body">
@@ -37,7 +37,7 @@
                                 </tr>
                                 </tfoot>
                                 <tbody>
-                                    @foreach($comments->comments as $key=>$comment)
+                                    @foreach($comments as $key=>$comment)
                                         <tr>
                                             <td>
                                                 <div class="media">

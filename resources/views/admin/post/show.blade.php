@@ -42,6 +42,22 @@
                         </div>
                     </div>
                 </div>
+                @foreach($post->comments as $comment)
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="media-heading" {{$comment->user->name}}>
+                                    <small>{{$comment->created_at->diffForHumans()}}</small>
+                                </h4>
+
+                                <a target="_blank" href="{{route('post.details', $post->id)}}">Reply</a>
+                            </div>
+                            <div class="body">
+                                {!! $comment->comment!!}
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header bg-cyan">
@@ -81,8 +97,6 @@
                             <img class="img-responsive thumbnail" src="{{ asset('storage/post/'.$post->image) }}" alt="">
                         </div>
                     </div>
-
-
                 </div>
             </div>
     </div>

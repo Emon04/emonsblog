@@ -109,7 +109,11 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        return view('admin.post.show', compact('post'));
+        $data['post']=Post::with(['comments'=>function ($query){
+            return $query->with('user')->get();
+        }])->where('id',$post->id)->first();
+   //     dd($data['post']);
+        return view('admin.post.show', $data);
 
     }
 

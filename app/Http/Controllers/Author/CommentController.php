@@ -12,8 +12,10 @@ class CommentController extends Controller
 {
     public function index()
     {
-        $comments = Auth::user()->posts;
-        return view('author.comments', compact('posts'));
+        $u_id = Auth::user()->id;
+        $data['comments'] = Comment::with('post')->where('user_id',$u_id)->get();
+
+        return view('author.comments',$data);
     }
 
     public function destroy($id)

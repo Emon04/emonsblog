@@ -52,7 +52,7 @@
                                                             <small>{{$comment->created_at->diffForHumans()}}</small>
                                                         </h4>
                                                         <p>{{$comment->comment}}</p>
-                                                        <a target="_blank" href="{{route('post.details', $comment->post->slug.'#comments')}}">Reply</a>
+                                                        <a target="_blank" href="{{route('post.details', $comment->post->id)}}">Reply</a>
                                                     </div>
                                                 </div>
                                             </td>
