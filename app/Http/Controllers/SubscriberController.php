@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Subscriber;
+use App\User;
 use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Http\Request;
 
@@ -19,4 +20,6 @@ class SubscriberController extends Controller
         Toastr::success('You have Successfully added to our subscriber list :)', 'Success');
         return redirect()->back();
     }
+
+
 }

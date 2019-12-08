@@ -6,8 +6,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="footer-section">
 
-                    <a class="logo" href="#"><img src="images/logo.png" alt="Logo Image"></a>
-                    <p class="copyright">Emon's Blog@ 2019. All rights reserved.</p>
+                    <p class="copyright">{{config('app.name')}} @ 2019, All Rights Reserved.</p>
                     <p class="copyright">Developed by <a href="https://colorlib.com" target="_blank">Emon</a></p>
                     <ul class="icons">
                         <li><a href="www.facebook.com/em0nahmed"><i class="ion-social-facebook-outline"></i></a></li>
@@ -24,15 +23,12 @@
                 <div class="footer-section">
                     <h4 class="title"><b>CATAGORIES</b></h4>
                     <ul>
-                        <li><a href="#">Java</a></li>
-                        <li><a href="#">PHP</a></li>
-                        <li><a href="#">Bootstrap</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">.NET</a></li>
-                        <li><a href="#">Spring</a></li>
-                        <li><a href="#">Java Script</a></li>
-                    </ul>
+                        @foreach($categories as $category)
+
+                        <li><a href="{{route('category.posts', $category->slug)}}">{{$category->name}}</a></li>
+                            @endforeach
+                        </ul>
+
                 </div><!-- footer-section -->
             </div><!-- col-lg-4 col-md-6 -->
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Author;
 
 use App\Http\Controllers\Controller;
 use App\User;
@@ -15,7 +15,7 @@ use Intervention\Image\Facades\Image;
 class SettingsController extends Controller
 {
     public function index(){
-        return view('admin.settings');
+        return view('author.settings');
 
     }
     public function updateProfile(Request $request){
@@ -35,8 +35,8 @@ class SettingsController extends Controller
             }
 //            for deleting old images from folder
             if(Storage::disk('public')->exists('profile/'.$user->image)){
-            Storage::disk('public')->delete('profile/'.$user->image);
-        }
+                Storage::disk('public')->delete('profile/'.$user->image);
+            }
             $profile = Image::make($image)->resize(500,500)->save($imageName,90);
             Storage::disk('public')->put('profile/'.$imageName,$profile);
 

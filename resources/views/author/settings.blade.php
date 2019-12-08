@@ -40,7 +40,7 @@
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade in active" id="profile_with_icon_title">
 
-                    <form  method="POST" action="{{route('admin.profile.update')}}" class="form-horizontal" enctype="multipart/form-data">
+                    <form  method="POST" action="{{route('author.profile.update')}}" class="form-horizontal" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
                         <div class="row clearfix">
@@ -102,7 +102,7 @@
                     </form>
                 </div>
                 <div role="tabpanel" class="tab-pane fade" id="change_password_with_icon_title">
-                    <form  method="POST" action="{{route('admin.password.update')}}" class="form-horizontal">
+                    <form  method="POST" action="{{route('author.password.update')}}" class="form-horizontal">
                         @csrf
                         @method('PUT')
                         <div class="row clearfix">

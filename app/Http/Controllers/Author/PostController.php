@@ -90,8 +90,12 @@ class PostController extends Controller
         $post->categories()->attach($request->categories);
         $post->tags()->attach($request->tags);
 
-        $users = User::where('role_id', '1')->get();
-        Notification::send($users, new NewAuthorPost($post));
+
+        if($post->status == true ){
+            $users = User::where('role_id', '1')->get();
+            Notification::send($users, new NewAuthorPost($post));
+        }
+
 
         Toastr::success('Post Successfully Saved :)', 'Success');
         return redirect()->route('author.post.index');
@@ -141,6 +145,7 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
+        $old_status = $post->status;
         if($post->user_id !=Auth::id()){
             Toastr::error('Sorry!!You are not authorized to access the post!!', 'Error');
             return redirect()->back();
@@ -182,12 +187,16 @@ class PostController extends Controller
         }else{
             $post->status = false;
         }
-        $post->is_approved = false;
+
         $post->save();
 
         $post->categories()->sync($request->categories);
         $post->tags()->sync($request->tags);
 
+        if($old_status == 0 && $post->status == true){
+            $users = User::where('role_id', '1')->get();
+            Notification::send($users, new NewAuthorPost($post));
+        }
         Toastr::success('Post Successfully Updated :)', 'Success');
         return redirect()->route('author.post.index');
 

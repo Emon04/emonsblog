@@ -26,7 +26,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::where('status',1)->latest()->get();
+        $posts = Post::where('is_approved',1)->where('status',1)->latest()->get();
         return view('admin.post.index',compact('posts'));
     }
 
@@ -183,7 +183,7 @@ class PostController extends Controller
     }
 
     public function pending(){
-        $posts =Post::where('is_approved',false)->get();
+        $posts =Post::where('is_approved',false)->where('status',true)->get();
         return view('admin.post.pending', compact('posts'));
     }
 
