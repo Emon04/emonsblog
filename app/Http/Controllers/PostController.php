@@ -23,7 +23,7 @@ class PostController extends Controller
             $post->increment('view_count');
             Session::put($blogno, 1);
         }
-        $randomposts = Post::all()->random('3');
+        $randomposts = Post::where('status', '1')->where('is_approved', '1')->get()->random('3');
         return view('post', compact('post', 'randomposts'));
     }
 
